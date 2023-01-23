@@ -20,6 +20,9 @@ app.get("/", function(req, res) {
 app.get("/app", function(req, res) {
     res.render('app');
 });
+app.get("/mimi", function(req, res) {
+    res.render('mimi_equipment');
+});
 
 app.post('/getResults', (req, res) => {
     let textResponses = req.body.textResponses;
