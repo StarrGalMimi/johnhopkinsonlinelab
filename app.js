@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-const port = process.env.port || 80;
+const port = process.env.PORT || 80;
 app.set('view engine', 'jade');
 app.use(express.static('src/public'));
 app.use(upload.array());
